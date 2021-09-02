@@ -15,7 +15,7 @@ public class Main {
         int[][] results = new int[3][intArray.length];
         int counter = 0;
         for (Sorts sort:sorts) {
-            results[counter] = sort.sort();
+            results[counter++] = sort.sort();
         }
         boolean allMathc = true;
         for (int[] inner: results) {
